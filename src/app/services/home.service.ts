@@ -25,6 +25,6 @@ export class HomeService {
     };
 
     sendImage(json: ApiRequest): Observable<ApiResponse> {
-        return this.http.post<ApiResponse>(`${environment.baseUrl}/API`, JSON.stringify(json), this.httpHeader);
+        return this.http.post<ApiResponse>(`${environment.baseUrl}/api_process_image`, JSON.stringify(json), this.httpHeader);
     }
 }
